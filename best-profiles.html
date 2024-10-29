@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style/style.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="style/mobile.css" media="(max-width: 768px)">
+    
+    <script>
+        fetch('el/header.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.h').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/menu.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.m').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/aside.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.s').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/footer.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.f').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+    </script>
+</head>
+<body style="margin: 0px;">
+
+<div class="all">
+    <header class="h"></header>
+    <menu class="m no-margin"></menu>
+<div class="part">
+
+    <main class="c t-basic" id="main">
+        <h2>Крутые профили участников сервера</h2>
+        <p class="t-basic">
+            К нам заходило немало интересных людей с которыми мы знакомились в процессе общения, однако что о человеке может рассказать его профиль? <br><br> Давайте же посмотрим вместе!
+        <br></p>
+        <img src="img/us/p1.png" class="img">
+        <p class="t-basic">
+            fenler: Я видел тебя на поле, ты говорил прощай... А затем - бам! <br><br>
+            - после хлопка плёткой, он продолжил дальше собирать рис.
+        </p>
+        <img src="img/us/p2.png" class="img">
+        <p class="t-basic">
+            Expert: Правило мужчин: <br>
+            1. Уважай всех, кроме ЛГБТ. <br>
+            2. Если тебя никто не уважает, забудь про 1 правило. <br><br>
+            Не докопаться! Написано как на надгробной плите! Однако, второе правило я бы слегка изменил:<br><br>
+            2. Если тебя никто не уважает, выйди из гей-клуба.
+            </p>
+        <img src="img/us/p3.png" class="img">
+        <p class="t-basic">
+            Oleg Jelezow (new): самый богатый человек нашего сервера, в то же время он единственный кто пользуется нашей экономикой... <br><br>
+            Зато вы только посмотрите, какой он шалунишка! Так ещё и Гену любит... Стоп, как там Гена?... 
+
+        </p>
+        <img src="img/us/p4.png" class="img">
+        <p class="t-basic">
+            Kusake:  'Они взяли её пироги, она взяла их жизни.' <br><br>
+            Главный секрет вокзальских пирожков раскрыт...<br>
+            
+        </p>
+        <img src="img/us/p5.png" class="img">
+        <p class="t-basic">
+            Ogur4ek: Волк не тот кто волк а тот кто квадробер<br><br>
+            Джейсон Стетхем: Я этой хуйни не говорил!
+            
+        </p>
+        <img src="img/jason.jpg" class="img">
+        <p class="t-basic">
+            Sangai: Ес чё, без обид ))<br><br>
+        </p>
+    </main>
+
+    <aside class="s" id="sidebar">
+    </aside>
+    <script src="el/glowscript.js">
+    </script>
+
+</div>
+    <footer class="f"></footer>
+</div>
+
+</body>
+</html>

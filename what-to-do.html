@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style/style.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="style/mobile.css" media="(max-width: 768px)">
+    
+    <script>
+        fetch('el/header.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.h').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/menu.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.m').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/aside.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.s').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/footer.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.f').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+    </script>
+</head>
+<body style="margin: 0px;">
+
+<div class="all">
+    <header class="h"></header>
+    <menu class="m no-margin"></menu>
+<div class="part">
+
+    <main class="c t-basic" id="main">
+        <h2>Мне скучно. Что делать?</h2>
+        <img src="img/cat.jpg" class="imgx2">
+        <p>На сайте, вы можете поиграть в небольшую текстовую игру. Нажмите на кнопку "Сыграть" внизу</p>
+        <p>Посмотрите другие страницы на сайте, там тоже есть чего интересно найти)</p>
+        <p>Чебурашка и Томико скучают, ведь им не с кем пообщаться. Маленький милый чебурашка, любит апельсины и друзей, а также гордый доблестный воин Томико Гойдослав, ярый герой и защитник нашего сервера! Он самовлюблённый эгоист, а его гордость не позволит остаться в проигрыше.</p>
+        <p>Коллекционируйте роли в свой профиль! На нашем сервере вы можете создать себе солидный доход и украсить свой профиль забавными ролями) Посмотрите на канале #role-shop<br></p>
+        <li><a href="https://discord.com/channels/1180786196180369438/1281595417590759465" class="link" target="_blank">Discord: #role-shop</a></li>
+        <p>Создайте свой блог и публикуйте что-то из своей жизни!</p>
+        <li><a href="https://discord.com/channels/1180786196180369438/1281910103435644938" class="link" target="_blank">Discord: #info-blog</a></li>
+        <p>Если вам всё равно скучно, предлагаю вам следующий список сайтов:</p>
+            <li><a href="https://lifehacker.ru/kak-uvelichit-chlen/" class="link" target="_blank">Лайфхакер: Как увеличить член и стоит ли это делать?</a>
+                <div class="t-note">Способы есть, но результат вам может не понравиться...</div>
+            </li>
+            <li><a href="https://www.youtube.com/watch?v=QndRCnkocP4&ab_channel=LiteSHOW" class="link" target="_blank">Youtube: Тест на психику. Игра попробуй не засмеяться.</a>
+                <div class="t-note">Засмеялся - лайк! ) Канал: LiteSHOW</div>
+            </li>
+            <li><a href="https://youtu.be/34IysznXRpI?si=PbkpJVfoPdNt61vH" class="link" target="_blank">Youtube: Анекдот про немого.</a>
+                <div class="t-note">Канал: АНЕКДОТЫ ОТ АЛЕКСЕЯ</div>
+            </li>
+        <p>Не хватает? Почитайте это:</p>
+        <li><a href="https://github.com/OSPanel/OpenServerPanel/wiki" class="link" target="_blank">Open Server Panel Документация</a>
+            <div class="t-note">Для самых скучающих</div>
+        </li>
+    </main>
+    
+    <aside class="s" id="sidebar">
+    </aside>
+    <script src="el/glowscript.js">
+    </script>
+
+</div>
+    <footer class="f"></footer>
+</div>
+
+</body>
+</html>

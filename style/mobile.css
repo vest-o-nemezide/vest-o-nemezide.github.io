@@ -1,0 +1,175 @@
+html, body{
+    width:100%; height:100%; overflow-x:hidden
+}
+a {
+    text-decoration: none;
+   }
+body {
+    background-color: rgb(255, 243, 235);
+}
+.h {
+    background-color: rgb(50, 50, 50);
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.m {
+    background-color: rgb(236, 126, 63);
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.c {
+    width: 93%;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid rgba(166, 166, 166, 0.5);
+    float: top;
+}
+.s {
+    width: 85%;
+    text-align: left;
+    padding-right: 20px;
+    border: 1px solid rgba(166, 166, 166, 0.5);
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.f {
+    min-height:25px;
+    height: max-content;
+    width: 100%;
+    background-color: rgb(77, 77, 77);
+}
+.all {
+    display: flex;
+    flex-direction: column;
+}
+.allcontent {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.part {
+    min-height: calc(92vh + 2px);
+    max-height: max-content;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.no-margin {
+    margin: 0px;
+}
+.head {
+    color:rgb(223, 223, 223);
+    font: 20px"verdana";
+}
+.t-basic {
+    color:rgb(50, 50, 50);
+    font: 13px"verdana";
+}
+.t-dark {
+    color:rgb(223, 223, 223);
+    font: 13px"verdana";
+}
+.t-darklight {
+    color:rgba(223, 223, 223, 0.5);
+    font: 13px"verdana";
+}
+.t-gb {
+    color:rgb(223, 223, 223);
+    font: 13px"verdana";
+    background-color: rgb(50, 50, 50);
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.t-glow {
+    text-shadow: rgba(236, 126, 63, 0.5) 0 0 2.5px;
+    color: rgb(255, 125, 65);
+    transition: color 0.1s;
+}
+.no-glow {
+    color: rgb(50, 50, 50);
+    transition: color 0.1s;
+}
+.butt {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.t-note {
+    color:rgb(168, 168, 168);
+    font: italic 13px "verdana";
+}
+.img {
+    width: 200px;
+}
+.imgx2 {
+    width: 200px;
+}
+.link {
+    color: rgb(255, 125, 65);
+    transition: color 0.1s;
+}
+.glowlink {
+    text-shadow: rgba(236, 126, 63, 0.5) 0 0 2.5px;
+    color: rgb(255, 125, 65);
+    transition: color 0.1s;
+}
+.menuel {
+    display: flex; /* Устанавливаем flex-контейнер */
+    padding: 0; /* Убираем отступы по умолчанию */
+    list-style-type: none; /* Убираем стандартные маркеры списка */
+}
+.button-container {
+    display: flex; /* Устанавливаем flex-контейнер */
+    justify-content: flex-start; /* Равномерное распределение кнопок */
+    align-items: center; /* Центрирование кнопок по вертикали */
+}
+
+.button {
+    padding: 5px; /* Внутренние отступы для кнопок */
+    border: none; /* Убираем рамку */
+    background-color: #EC7E3F; /* Зеленый фон */
+    color: white; /* Цвет текста */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+    height: 35px;
+    padding-left: 10px;
+}
+
+.button:hover {
+    background-color:rgb(93, 50, 26); /* Темнее зеленый при наведении */
+}
+.glowing-text {
+    color: #ffffff; /* Черный цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    text-shadow: 
+        0 0 5px rgba(255, 243, 235, 0), /* Нежное свечение */
+        0 0 10px rgba(255, 243, 235, 0), /* Более яркое свечение */
+        0 0 15px rgba(255, 243, 235, 0), /* Яркое свечение */
+        0 0 20px rgba(255, 243, 235, 0), /* Еще более яркое свечение */
+        0 0 25px rgba(255, 243, 235, 0); /* Очень яркое свечение */
+    animation: glow 1s infinite alternate; /* Анимация моргания */
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 
+            0 0 5px rgba(255, 243, 235, 0), /* Полная тьма */
+            0 0 10px rgba(255, 243, 235, 0),
+            0 0 15px rgba(255, 243, 235, 0),
+            0 0 20px rgba(255, 243, 235, 0),
+            0 0 25px rgba(255, 243, 235, 0);
+    }
+    100% {
+        text-shadow: 
+            0 0 5px rgba(255, 243, 235, 0), /* Нежное свечение */
+            0 0 10px rgba(255, 243, 235, 0.35), /* Более яркое свечение */
+            0 0 15px rgba(255, 243, 235, 0.65), /* Яркое свечение */
+            0 0 20px rgba(255, 243, 235, 0.85), /* Еще более яркое свечение */
+            0 0 25px rgba(255, 243, 235, 1); /* Очень яркое свечение */
+    }
+}

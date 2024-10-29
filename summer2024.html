@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style/style.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="style/mobile.css" media="(max-width: 768px)">
+    
+    <script>
+        fetch('el/header.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.h').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/menu.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.m').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/aside.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.s').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/footer.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.f').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+    </script>
+</head>
+<body style="margin: 0px;">
+
+<div class="all">
+    <header class="h"></header>
+    <menu class="m no-margin"></menu>
+<div class="part">
+
+    <main class="c t-basic" id="main">
+        <h2>Старые баннеры: Лето 2024</h2>
+        <a href="old-banners.html">Вернутся на предыдущую страницу</a><br><br>
+            <img src="old-banners/su24img/1.jpg" class="imgx2"> <br>
+            <img src="old-banners/su24img/2.png" class="imgx2"> <br>
+            <img src="old-banners/su24img/3.jpg" class="imgx2"> <br>
+            <img src="old-banners/su24img/4.png" class="imgx2"> <br>
+            <img src="old-banners/su24img/5.jpg" class="imgx2"> <br>
+            <img src="old-banners/su24img/j.png" class="imgx2"> <br>
+            <img src="old-banners/su24img/6.jpg" class="imgx2">
+    </main>
+
+    <aside class="s" id="sidebar">
+    </aside>
+    <script src="el/glowscript.js">
+    </script>
+
+</div>
+    <footer class="f"></footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style/style.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="style/mobile.css" media="(max-width: 768px)">
+    
+    <script>
+        fetch('el/header.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.h').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/menu.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.m').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/aside.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.s').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/footer.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.f').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+    </script>
+</head>
+<body style="margin: 0px;">
+
+<div class="all">
+    <header class="h"></header>
+    <menu class="m no-margin"></menu>
+<div class="part">
+
+    <main class="c t-basic" id="main">
+        <h2>Слова великого и неповторимого Oleg Jelezow</h2>
+        <img src="img/o/o1.png" class="img"><br><br>
+        <img src="img/o/o2.png" class="img"><br><br>
+        <p class="t-note">
+            (Примечание: После этих слов, Олег был замучен за капс)
+        </p>
+        <img src="img/o/o3.png" class="img"><br><br>
+        <img src="img/o/o4.png" class="img"><br><br>
+        <img src="img/us/ol.png" class="img"><br><br>
+        
+    </main>
+
+    <aside class="s" id="sidebar">
+    </aside>
+    <script src="el/glowscript.js">
+    </script>
+
+</div>
+    <footer class="f"></footer>
+</div>
+
+</body>
+</html>

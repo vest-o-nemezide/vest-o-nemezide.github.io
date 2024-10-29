@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style/style.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="style/mobile.css" media="(max-width: 768px)">
+    
+    <script>
+        fetch('el/header.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.h').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/menu.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.m').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/aside.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.s').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/footer.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.f').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+    </script>
+</head>
+<body style="margin: 0px;">
+
+<div class="all">
+    <header class="h"></header>
+    <menu class="m no-margin"></menu>
+<div class="part">
+
+    <main class="c t-basic" id="main">
+        <h2>Что у нас за каналы?</h2>
+        <img src="img/iceberg.png" class="imgx2">
+        <p class="t-basic">
+            На нашем сервере имеется много разных интересных каналов, некоторые вы могли заметить как появились спустя время, а некоторые были всё время. Однако есть ТАКИЕ экземпляры, о которых стоило бы поговорить отдельно...<br><br>
+        </p>
+        <h3>#quotes, #cat, #giveaways</h3>
+        Верхушкой нашего айсберга стали каналы: Цитаты, Коты, Розыгрыши. <br>
+        В канале #quotes вы можете поделиться очень мудрой цитатой какого нибудь человека, так как слова ВЕЛИКИХ людей не должны стоять возле каких-то обыкновенных #photos. <br><br>
+        #cat - Просто котики. Получите кота прописав команду !кот. <br><br>
+        Небольшие розыгрыши, #giveaways, проводились пока-что только 1 раз. Не забывайте, что предложив хорошую идею вы тоже можете наполнить эти каналы смыслом, или создать даже более полезные каналы для нашего сервачка! <br><br>
+        <h3>#work; #autopartner</h3>
+        Увидел новое сообщение @ Зашёл на сервер @ Опять #work и #autopartner @ Печалька... <br><br>
+        Почему не убрать эти два канала? Зачем они нужны? Ну со вторым всё просто, большая часть нашей аудитории пришла именно от бота Auto Partnership, который позволяет включить наш сервак в систему массовой рассылки приглашений, однако взамен он требует сохранить видимым для всех канал с рассылками, поэтому больше и чаще всего сообщения там. <br><br>
+        А вот канал #work... В основном, там рассылаются сообщения о том что можно забрать деньги, но так как экономикой никто не пользуется, возможно в скором времени этот канал пропадёт.<br><br>
+        <h3>Голосовые каналы</h3>
+        Ну здесь скорее всего хочу рассказать интересный факт: Зайдите в голосовой канал #create voice, и вам будет создан отдельный голосовой канал для вас и ваших друзей)<br><br>
+        <h3>Категория УРОКИ</h3>
+        Уроки... Зачем же нужны эти уроки?
+        У теоретиков много версий - первая, возможно именно там проводились древние ритуалы по открытию третьего глаза... Другие говорят, что представители славянских народов использовали этот канал как прямой канал для молитв Перуну...<br><br>
+        <h3>#nsfw, #toxic</h3>
+        !!! Уберите несовершеннолетних и беременных детей подальше от экрана !!! <br><br>
+        В процессе эволюции, голые обезьяны перешли с преимущественного потребления растительной пищи на мясо животных. Сочное мясо - именно эта вещь заставляла первобытных людей охотится и нападать, становится всё более кровожадными и свыкаться с агрессивным и хищным образом жизни. <br><br><br>
+        Вопреки тому, что мы давно не первобытные люди, придобитые нами инстинкты желают всадить кому-нибудь когти поглубже и сгореть пламенем ярче и ещё ярче... Именно для удовлетворения этих потребностей были созданы эти каналы. <br><br>
+        В то время как в канале #toxic происходят граматические преступления, в канале #nsfw ваши глаза захотят скорее вытечь куда подальше от экрана...<br><br>
+        Чтобы попасть в канал #nsfw, посетите канал #take-roles и выберите фиолетовую реакцию с значением "усмирить своего змея горыныча", но я вам КРАЙНЕ не рекомендую этого делать. <br>
+        <h3>Думайте головой и желаю УДАЧИ!</h3>
+        <a href="https://discord.com/channels/1180786196180369438/1282075891039600722" class="link" target="_blank">[#take-roles]</a><br>
+        <a href="https://discord.com/channels/1180786196180369438/1286389263864299555" class="link" target="_blank">[#quotes]</a><a href="https://discord.com/channels/1180786196180369438/1272924349514518591" class="link" target="_blank">[#cat]</a><a href="https://discord.com/channels/1180786196180369438/1272877747957661786" class="link" target="_blank">[#giveaways]</a><br>
+        <a href="https://discord.com/channels/1180786196180369438/1263945529285677196" class="link" target="_blank">[#belarussian]</a> - (Категория УРОКИ)<br>
+        <a href="https://discord.com/channels/1180786196180369438/1180790008735608864" class="link" target="_blank">[#toxic]</a><br>
+    </main>
+
+    <aside class="s" id="sidebar">
+    </aside>
+    <script src="el/glowscript.js">
+    </script>
+
+</div>
+    <footer class="f"></footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style/style.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="style/mobile.css" media="(max-width: 768px)">
+    <style>
+        py-splashscreen {
+            display: none;
+            width: 0px;
+        }
+      </style>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+    
+    <script>
+        fetch('el/header.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.h').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/menu.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.m').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/aside.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.s').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+        fetch('el/footer.html')
+            .then(response => response.text())
+            .then(data => document.querySelector('.f').innerHTML = data)
+            .catch(error => console.error('Ошибка загрузки:', error));
+    </script>
+    <py-terminal auto="" docked="" class="py-terminal-hidden py-terminal-docked">
+        <pre class="py-terminal"></pre>
+    </py-terminal>
+</head>
+<body style="margin: 0px;">
+
+<div class="all">
+    <header class="h"></header>
+    <menu class="m no-margin"></menu>
+<div class="part">
+    <main class="c t-basic" id="main">
+        <h2>Текстовая игра</h2>
+        <div class="t-note">
+            by Robingud
+            <br><br>
+        </div>
+        <div id="game-output">Загрузка игры...</div>
+        <div>
+            <button class="butt" id="button1">1</button>
+            <button class="butt" id="button2">2</button>
+            <button class="butt" id="button3">3</button>
+        </div>
+        <button class="butt" style="font-size:15px" href="#" onclick="location.reload(); return false;">Начать заново</button>
+    
+        <py-script src="game.py"></py-script>
+    </main>
+    <aside class="s" id="sidebar">
+    </aside>
+    <script src="el/glowscript.js">
+    </script>
+
+
+
+</div>
+    <footer class="f"></footer>
+</div>
+
+</body>
+</html>
